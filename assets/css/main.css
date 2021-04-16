@@ -18,8 +18,9 @@ width: 170px;
     width: 100%;
 display: flex ; 
 list-style: none;
-margin-left: 38px;
 align-items: center;
+justify-content: space-between;
+margin-left: 38px ;
 }
 .hnavbar-item{
 position: relative;
