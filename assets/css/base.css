@@ -194,7 +194,7 @@ border-radius: 0;
   background-color: var(--color-yellow);
 }
 .btn-text--white{
-  color: var(--white-color);
+  color: var(--white-color) !important;
 }
 .btn-text--blue{
   color: var(--color-blue);
@@ -218,7 +218,7 @@ p{
 color: var(--color-font-ml);
 }
 .text-color--white{
-  color: var(--white-color);
+  color: var(--white-color) ;
 }
 /* backgroud */
 .background--white{

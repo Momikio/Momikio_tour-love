@@ -23,15 +23,15 @@ align-items: center;
 }
 .hnavbar-item{
 position: relative;
-}
-.hnavbar-item__link:not(:last-child){
-text-decoration: none;
 font-size: var(--font-size-16);
 font-weight: 400;
 display: block;
 
-color: var(--color-font-head);
 letter-spacing: 1px;
+}
+.hnavbar-item__link{
+text-decoration: none;
+color: var(--color-font-head);
 }
 /* menu cap 2 va cap 3 cua header */
 /* menu cap 2 */
