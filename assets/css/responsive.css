@@ -28,9 +28,7 @@
   }
 
   /* tour paris */
-  .wide__width-full {
-    width: 100%;
-  }
+  
   .tour-paris {
     padding: 2.5rem 1rem 0;
   }
@@ -47,6 +45,10 @@
   }
   .tbenefits-list {
     padding: 0 2.2rem;
+  }
+  .tour-paris__text-title{
+    font-size: 5rem;
+    line-height: 6rem;
   }
   /* tour ticket */
   .tour-tickets {
