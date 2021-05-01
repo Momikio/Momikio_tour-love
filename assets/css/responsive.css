@@ -62,7 +62,15 @@
   .tickets-tour {
     margin-bottom: 2rem;
   }
+  .footer-below{
+    display: block;
+    text-align: center;
  
+  }
+  .footer-below div{
+    padding: 8px 0;
+  line-height: 2rem;
+  }
 }
 /* tablet  */
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -100,5 +108,5 @@
     width: 100%;
   }
   /* footer */
-  
+ 
 }

@@ -822,7 +822,7 @@ padding-left: 6px;
 }
 .footer-below{
    
-    height: 53px;
+  min-height: 53px;
     background-color: var(--primary-color);
     margin:0 auto;
     display: flex;
