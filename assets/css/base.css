@@ -53,6 +53,7 @@ body a{
 .btn{
 padding: 12px 30px;
   display:inline-flex !important;
+  text-align: center;
   align-items: center;
   justify-content: center;
   text-decoration: none;
