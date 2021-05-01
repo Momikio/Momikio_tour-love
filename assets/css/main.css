@@ -234,7 +234,7 @@ margin-right: var(--margin-18);
 @media(max-width:1352px){
     #slider{
       
-        padding-top: 53%;
+        padding-top: 57%;
       }
 }@media(max-width:700px){
     #slider{
@@ -249,6 +249,7 @@ margin-right: var(--margin-18);
 position: absolute;
 top:0
 }
+
 .slider-lists{
 position: absolute;
 top: 20%;
@@ -256,7 +257,13 @@ right:16%;
 transform: translateX(16%);
 
 }
-
+@media(max-width:1200px){
+   .slider-lists{
+      top:10%;
+      right: 10%;
+       
+      }
+}
 .slider-lists-texts{
 
     font-size: var(--font-size-25);
@@ -372,7 +379,7 @@ color: var(--white-color);
     right: 49%;
     font-size: var(--font-size-15);
     color: var(--white-color);
-    padding: 14px 11px;
+    padding: 14px 14px;
     background-color: var(--color-font-ml);
     border-radius: 50%;
 }
