@@ -245,7 +245,7 @@ margin-right: var(--margin-18);
 .slider-img{
     width: 100%;
   height: 100%;
-  background: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/12/slide-01.jpg") center center / cover no-repeat;
+  background: url(../img/anh/slide-01.jpg) center center / cover no-repeat;
 position: absolute;
 top:0
 }
@@ -381,7 +381,7 @@ color: var(--white-color);
 .tour-paris__img{
     width: 100%;
     height: 658.5px;
-    background: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-07.jpg?id=1845") center / cover no-repeat;
+    background: url("../img/anh/anh-gai__xem-bando.jpg") center / cover no-repeat;
     position: relative;
 }
 .tour-paris__content{
@@ -596,9 +596,11 @@ padding: 12px 0 0;
 
 .tickets-wrap-img{
    position: relative; 
+  
 }
 .tickets-img{
- width: 100%;   
+ width: 100%; 
+
 }
 .tickets-contents{
 padding: 32px 30px;
@@ -746,7 +748,7 @@ padding-bottom: 12px;
 }
 .footer-img{
   min-height: 550px ;
-    background: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-07.jpg?id=1845) center / cover no-repeat;
+    background: url(../img/anh/anh-gai__xem-bando.jpg) center / cover no-repeat;
     position: relative;
 }
 .footer-wrap{
