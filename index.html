@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <link rel="stylesheet" href=".//assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/img/icon/fontawesome-free-5.15.3-web/css/all.min.css">
@@ -17,176 +20,290 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" style="overflow: hidden;">
         <div id="headpage">
-            <div class="grid">
-                <div  class="headpage-navbar__wrap">
-                    <a href="" class="hnavbar-img"><img src="./assets/img/logo-color-1.png" alt="" class="hnavbar-img__logo">
+            <div class="grid wide">
+                <div class="headpage-navbar__wrap">
+                    <a href="" class="hnavbar-img"><img src="./assets/img/logo-color-1.png" alt=""
+                            class="hnavbar-img__logo">
                     </a>
-                    <!-- <ul class="hnavbar-list"> -->
-                        <div class="hnavbar-list"> 
-                             <div class="hnavbar-item"><a href="" class="hnavbar-item__link">HOME</a></div>
-                    <div class="hnavbar-item"><a href="" class="hnavbar-item__link">PACKAGES</a>
-                        <ul class="menu-cap2">
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Search 1</a>
-                                <div class="pk-item__noti pk-item__noti--red">HOT</div>
-                            </li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Search 2</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Tour Package </a><i
-                                    class="menu-pk-item__icon ti-angle-right"></i>
-                                <ul class="menu-cap3-list">
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Carousel</a>
-                                        <div class="pk-item__noti pk-item__noti--green">BEST</div>
+                    <div class="hide-on__tablet-moible contain-navbar">
+                        <div class="hnavbar-wrap">
+                            <div class="hnavbar-item"><a href="" class="hnavbar-item__link">HOME</a></div>
+                            <div class="hnavbar-item"><a href="" class="hnavbar-item__link">PACKAGES</a>
+                                <ul class="menu-cap2">
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Search 1</a>
+                                        <div class="pk-item__noti pk-item__noti--red">HOT</div>
                                     </li>
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Custom Map</a>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Search 2</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Tour Package
+                                        </a><i class="menu-pk-item__icon ti-angle-right"></i>
+                                        <ul class="menu-cap3-list">
+                                            <li class="menu-capC-item"><a href=""
+                                                    class="menu-capC-item-link">Carousel</a>
+                                                <div class="pk-item__noti pk-item__noti--green">BEST</div>
+                                            </li>
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Custom
+                                                    Map</a>
+                                            </li>
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">360°
+                                                    Panorama</a></li>
+                                            <li class="menu-capC-item"><a href=""
+                                                    class="menu-capC-item-link">Default</a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">360°
-                                            Panorama</a></li>
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Default</a>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Destination</a>
                                     </li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Typology</a></li>
                                 </ul>
-                            </li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Destination</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Typology</a></li>
-                        </ul>
-                    </div>
-                    <div class="hnavbar-item"><a href="" class="hnavbar-item__link">SHOP</a>
-                        <ul class="menu-cap2">
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Archive</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Single Product</a>
-                            </li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Cart</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Checkout</a></li>
-                        </ul>
-                    </div>
-                    <div class="hnavbar-item"><a href="" class="hnavbar-item__link">ABOUT US</a>
-                        <ul class="menu-cap2">
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us</a>
-                                <div class="pk-item__noti pk-item__noti--mint">NEW</div>
-                            </li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us 2</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="hnavbar-item"><a href="" class="hnavbar-item__link">PAGES</a>
-                        <ul class="menu-cap2">
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Services</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Agency Torus</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Testimonials</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Prices</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Promotions</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Faq</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Comming Soon</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us</a>
-                                <i class="menu-pk-item__icon ti-angle-right"></i>
-                                <ul class="menu-cap3-list">
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us 1</a>
+                            </div>
+                            <div class="hnavbar-item"><a href="" class="hnavbar-item__link">SHOP</a>
+                                <ul class="menu-cap2">
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Archive</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Single Product</a>
+                                    </li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Cart</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Checkout</a></li>
+                                </ul>
+                            </div>
+                            <div class="hnavbar-item"><a href="" class="hnavbar-item__link">ABOUT US</a>
+                                <ul class="menu-cap2">
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us</a>
+                                        <div class="pk-item__noti pk-item__noti--mint">NEW</div>
                                     </li>
                                     <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us 2</a>
                                     </li>
                                     <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us 3</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact</a>
-                                <i class="menu-pk-item__icon ti-angle-right"></i>
-                                <ul class="menu-cap3-list">
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact 1</a>
+                            </div>
+                            <div class="hnavbar-item"><a href="" class="hnavbar-item__link">PAGES</a>
+                                <ul class="menu-cap2">
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Services</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Agency Torus</a>
                                     </li>
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact 2</a>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Testimonials</a>
+                                    </li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Prices</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Promotions</a>
+                                    </li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Faq</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Comming Soon</a>
+                                    </li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us</a>
+                                        <i class="menu-pk-item__icon ti-angle-right"></i>
+                                        <ul class="menu-cap3-list">
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us
+                                                    1</a>
+                                            </li>
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us
+                                                    2</a>
+                                            </li>
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">About Us
+                                                    3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact</a>
+                                        <i class="menu-pk-item__icon ti-angle-right"></i>
+                                        <ul class="menu-cap3-list">
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact
+                                                    1</a>
+                                            </li>
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact
+                                                    2</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="hnavbar-item"><a href="" class="hnavbar-item__link">NEW</a>
-                        <ul class="menu-cap2">
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Archive</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Single Post</a>
-                                <i class="menu-pk-item__icon ti-angle-right"></i>
-                                <ul class="menu-cap3-list">
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Full Width</a>
+                            </div>
+                            <div class="hnavbar-item"><a href="" class="hnavbar-item__link">NEW</a>
+                                <ul class="menu-cap2">
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Archive</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Single Post</a>
+                                        <i class="menu-pk-item__icon ti-angle-right"></i>
+                                        <ul class="menu-cap3-list">
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Full
+                                                    Width</a>
+                                            </li>
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Right
+                                                    Sidebar</a></li>
+                                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Left
+                                                    Sidebar</a></li>
+                                        </ul>
                                     </li>
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Right
-                                            Sidebar</a></li>
-                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Left
-                                            Sidebar</a></li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="hnavbar-item"><a href="" class="hnavbar-item__link">CONTACT</a>
-                        <ul class="menu-cap2">
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact 1</a></li>
-                            <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact 2</a></li>
+                            </div>
+                            <div class="hnavbar-item"><a href="" class="hnavbar-item__link">CONTACT</a>
+                                <ul class="menu-cap2">
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact 1</a></li>
+                                    <li class="menu-capC-item"><a href="" class="menu-capC-item-link">Contact 2</a></li>
 
-                        </ul>
+                                </ul>
+                            </div>
+                            <div><a href="" class="btn btn--primary hnavbar-item__link btn-text--white">BOOK NOW</a>
+                            </div>
+                        </div>
                     </div>
-                    <div><a href="" class="btn btn--primary hnavbar-item__link btn-text--white">BOOK NOW</a>
-                    </div></div>
-                  
-                    <!-- </ul> -->
+
+
+
                 </div>
+                <div class="headpage-navbar__wrap2">
+                    <label for="check-navbar" class="open-navbar"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" hidden id="check-navbar">
+                    <div class="contain-navbar__mobile-tablet">
+                        <label for="check-navbar" class="icon-close-navbar"><i class="far fa-times-circle"></i></label>
+                        <ul class="lists-navbar-contents__mobi-tab">
+                            <li class="navbar-mobi-tab__item"><a href="" class="navbar-mobi-tab__link">HOME</a></li>
+                            <li class="navbar-mobi-tab__item"><a href="" class="navbar-mobi-tab__link">PACKAGES</a>
+                                <ul class="navbar-mobi-tab__menu2">
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Search 1</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Search 2</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Tour Package</a>
+                                        <ul class="navbar-mobi-tab__menu3">
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">Carousel</a></li>
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">Custom Map</a></li>
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">360° Panorama</a></li>
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">Default</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Destination</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Typology</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-mobi-tab__item"><a href="" class="navbar-mobi-tab__link">SHOP</a>
+                                <ul class="navbar-mobi-tab__menu2">
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Archive</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Single Product</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Cart</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-mobi-tab__item"><a href="" class="navbar-mobi-tab__link">ABOUT US</a>
+                                <ul class="navbar-mobi-tab__menu2">
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">About Us</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">About Us 2</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">About Us 3</a></li>
 
+                                </ul>
+                            </li>
+                            <li class="navbar-mobi-tab__item"><a href="" class="navbar-mobi-tab__link">PAGES</a>
+                                <ul class="navbar-mobi-tab__menu2">
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Search 1</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Search 2</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Tour Package</a>
+                                        <ul class="navbar-mobi-tab__menu3">
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">Carousel</a></li>
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">Custom Map</a></li>
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">360° Panorama</a></li>
+                                            <li class="navbar-mobi-tab__menu3-item"><a href=""
+                                                    class="navbar-mobi-tab__menu3-link">Default</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Destination</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">Typology</a></li>
+                                </ul>
+                            </li>
+                            <li class="navbar-mobi-tab__item"><a href="" class="navbar-mobi-tab__link">NEWS</a>
+                                <ul class="navbar-mobi-tab__menu2">
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">About Us</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">About Us 2</a></li>
+                                    <li class="navbar-mobi-tab__menu2-item"><a href=""
+                                            class="navbar-mobi-tab__menu2-link">About Us 3</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
 
             </div>
         </div>
         <div id="slider">
-            <div class="slider-img">
-                <div class="grid slider-lists">
-                    <div class="slider-lists-texts">
-                        <h1 class="slider-text__up">Enjoy <div class="slider-text__color--primary"
-                                style="display: inline;">Your</div> Holiday
-                        </h1>
-                        <h1 class="slider-text__below">With Our <span class="slider-text__color--primary">Agency</span>
-                        </h1>
-                    </div>
-                    <ul class="slider-lists-benefits">
-                        <li class="sbenefits-item">
-                            <i class="slider__icon  fas  fa-star "></i>
-                            <div class="sbenefits-text">SPECTACULAR THINGS
-                                TO
-                                DO BEST
-                                PLACES TO SEE</div>
-                        </li>
-                        <li class="sbenefits-item">
-                            <i class="slider__icon  fas fa-star "></i>
-                            <div class="sbenefits-text">LOCCALS GUIDE
-                                AVAILABLE</div>
-                        </li>
-                        <li class="sbenefits-item">
-                            <i class="slider__icon  fas fa-star "></i>
-                            <div class="sbenefits-text">ALL INCLUSIVE
-                                FAMILY
-                                HOLIDAY
-                                FOR ALL SEASON</div>
-                        </li>
-                    </ul>
-                    <div   class="slider-button"> <a href="" ><button style="cursor:pointer;" class="btn btn--primary slider-button__buy btn-text--white btn-hover">BUY
-                            A LICENSE
-                        </button></a> 
-                        <div class="slider-noti">$25</div>
-                    </div>
+
+            <div class="slider-img"></div>
+            <div class=" slider-lists">
+                <div class="slider-lists-texts hide-on__tablet-moible">
+                    <h1 class="slider-text__up">Enjoy <div class="slider-text__color--primary" style="display: inline;">
+                            Your</div> Holiday
+                    </h1>
+                    <h1 class="slider-text__below">With Our <span class="slider-text__color--primary">Agency</span>
+                    </h1>
                 </div>
-
+                <ul class="slider-lists-benefits hide-on__tablet-moible">
+                    <li class="sbenefits-item">
+                        <i class="slider__icon  fas  fa-star "></i>
+                        <div class="sbenefits-text">SPECTACULAR THINGS
+                            TO
+                            DO BEST
+                            PLACES TO SEE</div>
+                    </li>
+                    <li class="sbenefits-item">
+                        <i class="slider__icon  fas fa-star "></i>
+                        <div class="sbenefits-text">LOCCALS GUIDE
+                            AVAILABLE</div>
+                    </li>
+                    <li class="sbenefits-item">
+                        <i class="slider__icon  fas fa-star "></i>
+                        <div class="sbenefits-text">ALL INCLUSIVE
+                            FAMILY
+                            HOLIDAY
+                            FOR ALL SEASON</div>
+                    </li>
+                </ul>
+                <div class="slider-button">
+                    <a href="" class="btn btn--primary slider-button__buy btn-text--white btn-hover">BUY
+                        A LICENSE
+                    </a>
+                    <div class="slider-noti hide-on__tablet-moible">$25</div>
+                </div>
             </div>
-        </div>
 
+        </div>
         <div id="app-content">
-            <div class="grid">
-                <div class="grid__row  tour-paris">
-                    <div class="grid__col-7 tour-paris__content">
+            <div class="grid wide wide__width-full">
+                <div class="row  tour-paris">
+                    <div class="col l-7 m-12 tour-paris__content">
                         <div class="tour-paris__text-intro">WALK TOUR AND SUGWAY</div>
-                        <h1 class="tour-paris__text-title">The Paris Experience !
-                            <div class="underlined"></div>
+                        <h1 class="tour-paris__text-title">The Paris <span>Experience<div class="underlined"></div>
+                                </span> !
                         </h1>
-                        <div class="tour-paris__text-paragraph grid__row">
-                            <div class="grid__col-7-2">
+                        <div class="tour-paris__text-paragraph row">
+                            <div class="col l-6 m-12">
                                 <p>
                                     Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin rhoncus urn a
                                     dictum neque molestie ultricies.</p>
                             </div>
-                            <div class="grid__col-7-2">
+                            <div class="col l-6 m-12">
                                 <p>
                                     Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin rhoncus urn a
                                     dictum neque molestie ultricies.</p>
@@ -195,34 +312,34 @@
                         <a href="" class=" tour-paris__button btn btn--primary btn-text--white">VIEW ALL PACKAGES</a>
 
                     </div>
-                    <div class="grid__col-4">
+                    <div class="l-4 m-12 c-12">
                         <div class="tour-paris__img">
                             <a href="https://www.youtube.com/watch?v=PVjiKRfKpPI" target="_blank"><img
                                     src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/icon-play.png"
                                     alt="" class="tour-paris__img-play"></a>
                         </div>
                     </div>
-                    <div class="grid__col-9">
-                        <div class="grid__row tour-paris__img-link-list">
-                            <a href="" class="grid__col-9-4 tour-link-tick">
+                    <div class="col l-9 m-12 c-12">
+                        <div class="row tour-paris__img-link-list">
+                            <a href="" class="col l-3 m-6 c-12 tour-link-tick">
                                 <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg"
                                     alt="" class="tour-paris-img__sm">
                                 <div class="tour-paris-cash btn--sm btn__colormix--yellow-orange btn-text--white">700$
                                 </div>
                             </a>
-                            <a href="" class="grid__col-9-4 tour-link-tick">
+                            <a href="" class="col l-3 m-6 c-12 tour-link-tick">
                                 <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-02-150x150.jpg"
                                     alt="" class="tour-paris-img__sm">
                                 <div class="tour-paris-cash btn--sm btn__colormix--tomato-primary btn-text--white">500$
                                 </div>
                             </a>
-                            <a href="" class="grid__col-9-4 tour-link-tick">
+                            <a href="" class="col l-3 m-6 c-12 tour-link-tick">
                                 <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-03-150x150.jpg"
                                     alt="" class="tour-paris-img__sm">
                                 <div class="tour-paris-cash btn--sm btn__colormix--purple-ligthred btn-text--white">400$
                                 </div>
                             </a>
-                            <a href="" class="grid__col-9-4 tour-link-tick">
+                            <a href="" class="col l-3 m-6 c-12 tour-link-tick">
                                 <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-04-150x150.jpg"
                                     alt="" class="tour-paris-img__sm">
                                 <div class="tour-paris-cash btn--sm btn__colormix--blue-green btn-text--white">1200$
@@ -236,13 +353,13 @@
             </div>
 
             <div class="tour-benefits__background">
-                <div class="grid">
+                <div class="grid wide wide__width-full">
                     <div class="tbenefits-titles">
                         <h3 class="tbenefits-title__up">MULTIPLE BENEFITS INCLUDED</h3>
                         <h1 class="tbenefits-title__below">OUR <u>SERVICES</u></h1>
                     </div>
-                    <div class="grid__row tbenefits-list">
-                        <div class="grid__col-4">
+                    <div class="row tbenefits-list">
+                        <div class="col l-4 m-12 c-12">
                             <div class="tbenefits-list__item">
                                 <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/12/ico-02.png"
                                     alt="" class="tbenfits-img">
@@ -275,7 +392,7 @@
                             </div>
 
                         </div>
-                        <div class="grid__col-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="tbenefits-list__item">
                                 <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/12/ico-06.png"
                                     alt="" class="tbenfits-img">
@@ -308,7 +425,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__col-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="tbenefits-list__item">
                                 <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/12/ico-01.png"
                                     alt="" class="tbenfits-img">
@@ -344,12 +461,13 @@
                 </div>
             </div>
 
-            <div class="grid">
-                <div class="grid__row tour-tickets">
-                    <div class="grid__col-3 tickets-sale">
+            <div class="grid wide">
+                <div class="row tour-tickets">
+                    <div class="l-3 m-12 c-12 tickets-sale">
                         <div class="tickets-wrap">
                             <div class="tickets-sale__intro">LAST MINUTE !</div>
-                            <h1 class="tickets-sale__title">SUMMER</h1><u class="tickets-sale__title-2">SALE</u>
+                            <h1 class="tickets-sale__title">SUMMER<div class="tickets-sale__title-2">SALE</div>
+                            </h1>
                             <div class="tickets-time-wrap">
                                 <div class="tickets-sale__time">
                                     <div class="tickets-numbers__sale">024</div>
@@ -379,13 +497,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid__col-9">
-                        <div class="grid__row">
-                            <div class="grid__col-9-2 tickets-tour">
+                    <div class="col l-9 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12 tickets-tour">
                                 <div class="tickets-wrap-img"> <img
                                         src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-1024x640.jpg"
                                         alt="" class="tickets-img">
-                                    <a  href=""  class="tickets-img-link btn__colormix--yellow-orange">
+                                    <a href="" class="tickets-img-link btn__colormix--yellow-orange">
                                         <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/arch.png"
                                             alt="" class="timg-link-local">
                                     </a>
@@ -417,7 +535,7 @@
                                 </div>
 
                             </div>
-                            <div class="grid__col-9-2 tickets-tour">
+                            <div class="col l-6 m-12 c-12 tickets-tour">
                                 <div class="tickets-wrap-img">
                                     <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-02-1024x640.jpg"
                                         alt="" class="tickets-img">
@@ -457,14 +575,13 @@
 
                             </div>
                         </div>
-
-
                     </div>
                     <div class="tour-news__title">
                         <div class="tour-news__text-up">FROM THE BLOG</div>
-                        <h1 class="tour-news__text-below">ARTICLES & <span>NEWS</span></h1>
+                        <h1 class="tour-news__text-below">ARTICLES & <div>NEWS</div>
+                        </h1>
                     </div>
-                    <div class="grid__col-6 tour-news">
+                    <div class="col l-6  m-12 c-12 tour-news">
                         <div class="tour-news"> <img
                                 src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg"
                                 alt="" class="tour-news__img">
@@ -491,7 +608,7 @@
                                 alt="" class="tour-news__img">
                         </div>
                     </div>
-                    <div class="grid__col-6  tour-news">
+                    <div class="col l-6  m-12 c-12  tour-news">
                         <div class="tour-news text-color--white"> <img
                                 src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/blog-04.jpg"
                                 alt="" class="tour-news__img">
@@ -524,93 +641,119 @@
         </div>
         <div id="footer">
             <div class=" footer-img">
-                <div class="grid footer-wrap ">
-                    <div class=" footer-contents">
-                        <div class="grid__col-6 footer-contents-right">
-                            <img alt="" style="width:150px;" class="footer-img-logo"
-                                src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/logo-color-1.png">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh
-                                condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.</p>
-                            <div class="footer-icon-social">
-                                <a href=""> <i class="fab fa-twitter"></i></a>
-                                <a href=""> <i class="fab fa-youtube"></i></a>
-                                <a href=""><i class="fab fa-facebook-square"></i></a>
-                                <a href=""><i class="fab fa-vimeo-v"></i></a>
+                <div class="grid wide footer-wrap ">
+                    <div class="footer-contents">
+                        <div class="row">
+                            <div class="col l-6  m-12 ">
+                                <div class="footer-contents-right">
+                                    <img alt="" style="width:150px;" class="footer-img-logo"
+                                        src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/logo-color-1.png">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et
+                                        nibh
+                                        condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget
+                                        ullamcorper.</p>
+                                    <div class="footer-icon-social">
+                                        <a href=""> <i class="fab fa-twitter"></i></a>
+                                        <a href=""> <i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                                        <a href=""><i class="fab fa-vimeo-v"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col l-6  hide-on__tablet-moible">
+                                <div class="row footer-contents-left">
+                                  
+                                        <div class="col l-4   footer-contents__ul ">
+                                            <div class="footer-category">OUR AGENCY</div>
+                                            <ul class="footer-contents-category">
+                                                <li class="footer-item">
+                                                    <i class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Services</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Insurancee</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Agency</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Tourism</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Payment</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-4   footer-contents__ul">
+                                            <div class="footer-category">PARTNERS</div>
+                                            <ul class="footer-contents-category">
+                                                <li class="footer-item">
+                                                    <i class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Booking</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">RentalCar</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">HostelWorld</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Trivago</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">TripAdvisor</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-4  footer-contents__ul">
+                                            <div class="footer-category">
+                                                LAST MINUTE</div>
+                                            <ul class="footer-contents-category">
+                                                <li class="footer-item">
+                                                    <i class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">London</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">California</span>
+                                                </li>
+                                                <li class="footer-item"> <i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Indonesia</span>
+                                                </li>
+                                                <li class="footer-item"><i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Europe</span>
+                                                </li>
+                                                <li class="footer-item"><i
+                                                        class="footer-item__icon fas fa-chevron-right"></i>
+                                                    <span class="footer-item__text">Oceania</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                 
+                                </div>
+
+
                             </div>
                         </div>
-                        <div class="grid__col-6 footer-contents-left">
-                            <div class="grid__col-6-3 footer-contents__ul ">
-                                <div class="footer-category">OUR AGENCY</div>
-                                <ul class="footer-contents-category">
-                                    <li class="footer-item">
-                                        <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Services</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Insurancee</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Agency</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Tourism</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Payment</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="grid__col-6-3 footer-contents__ul">
-                                <div class="footer-category">PARTNERS</div>
-                                <ul class="footer-contents-category">
-                                    <li class="footer-item">
-                                        <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Booking</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">RentalCar</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">HostelWorld</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Trivago</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">TripAdvisor</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="grid__col-6-3 footer-contents__ul">
-                                <div class="footer-category">
-                                    LAST MINUTE</div>
-                                <ul class="footer-contents-category">
-                                    <li class="footer-item">
-                                        <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">London</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">California</span>
-                                    </li>
-                                    <li class="footer-item"> <i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Indonesia</span>
-                                    </li>
-                                    <li class="footer-item"><i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Europe</span>
-                                    </li>
-                                    <li class="footer-item"><i class="footer-item__icon fas fa-chevron-right"></i>
-                                        <span class="footer-item__text">Oceania</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
                     </div>
-                      <div class="footer-below">
-                          <div>THE BEST WORDPRESS TRAVEL THEME</div>
-                          <div>COPYRIGHT NICDARK THEMES 2018</div>
-                      </div>
+                    <div class="footer-below">
+                        <div>THE BEST WORDPRESS TRAVEL THEME</div>
+                        <div>COPYRIGHT NICDARK THEMES 2018</div>
+                    </div>
                 </div>
-              
+
             </div>
         </div>
     </div>

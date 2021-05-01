@@ -4,14 +4,106 @@
 background-color: var(--white-color);
 }
 .headpage-navbar__wrap{
+height: 78px;
 display: flex;
 align-items: center;
-padding: 0 var(--pading-15);
-justify-content: space-between;
-height: 78px;
+}
+
+.headpage-navbar__wrap2{
+height: calc(78px / 2);
+display: flex;
+align-items: center;
+display: none;
+}
+.open-navbar{
+    font-size: 2.8rem;
+    color: var(--color-text);
+    margin: 0 auto 2.6rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+/* check input close / open navbar */
+#check-navbar:checked ~ .contain-navbar__mobile-tablet{
+    transform: translateX(0);
+  
+
+}
+/* navbar display in mobile and tablet */
+.icon-close-navbar{
+    color: var(--white-color);
+    font-size: 1.8rem;
+    position: absolute;
+    right: 0;
+}
+.contain-navbar__mobile-tablet{
+  
+    position: fixed;
+    overflow-y:auto;
+     top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    z-index: 99;
+
+    padding: 3rem;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+ 
+}
+.icon-close-navbar{
+    color: var(--white-color);
+    font-size: 3rem;
+    position: absolute;
+    right: 3rem;  
+}
+.lists-navbar-contents__mobi-tab{
+    position: absolute;
+    top:6rem ;
+}
+.navbar-mobi-tab__item:first-child{
+    margin-bottom: 3.8rem;
+}
+.navbar-mobi-tab__item:not(:first-child){
+    margin-top: 2.8rem;
+    padding-bottom: 1.6rem;
+}
+.contain-navbar__mobile-tablet ul {
+    list-style: none;
+    padding-left: 0;
+   
+}
+.navbar-mobi-tab__menu2 a{
+    text-decoration: none;
+    font-size: var(--font-size-16);
+    color: var(--white-color);
+    font-weight: 400;
+    display: block;
+    padding: 1.6rem 0;
+    
+}
+.navbar-mobi-tab__menu3{
+    margin-left: 4rem;
+}
+.navbar-mobi-tab__link{
+font-size: var(--font-size-24);
+color: var(--white-color);
+text-decoration: none;
+font-weight: 400;
+display: block;
+}
+/*     */
+
+
+
+
+
+.hnavbar-img{
+-webkit-tap-highlight-color: transparent;
 }
 .hnavbar-img__logo{
 width: 170px;
+
 
 }
 .hnavbar-list{
@@ -22,17 +114,28 @@ align-items: center;
 justify-content: space-between;
 margin-left: 38px ;
 }
+.contain-navbar{
+   width: 84%;
+}
+.hnavbar-wrap{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
 .hnavbar-item{
 position: relative;
 font-size: var(--font-size-16);
 font-weight: 400;
 display: block;
 
+
 letter-spacing: 1px;
 }
 .hnavbar-item__link{
 text-decoration: none;
 color: var(--color-font-head);
+display: block;
+
 }
 /* menu cap 2 va cap 3 cua header */
 /* menu cap 2 */
@@ -123,31 +226,44 @@ margin-right: var(--margin-18);
 }
 
 /* slider */
+#slider{ 
+    position: relative;
+    padding-top: 40%;
 
+}
+@media(max-width:1352px){
+    #slider{
+      
+        padding-top: 53%;
+      }
+}@media(max-width:700px){
+    #slider{
+      
+        padding-top: 70%;
+      }
+}
 .slider-img{
- 
-  padding-top: 42%;
+    width: 100%;
+  height: 100%;
   background: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/12/slide-01.jpg") center center / cover no-repeat;
- 
-position: relative;
+position: absolute;
+top:0
 }
 .slider-lists{
 position: absolute;
-top:20% ;
-right: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
+top: 20%;
+right:16%;
+transform: translateX(16%);
+
 }
-@media(max-width:1550px){
-    .slider-lists{
-       display: none;
-    }
-}
+
 .slider-lists-texts{
+
     font-size: var(--font-size-25);
    transform: rotate(-3deg);
    text-align: center;
+  
+  
  
 }
 .slider-text__color--primary{
@@ -190,9 +306,11 @@ align-items: center;
     }
 }
 .slider-lists-benefits{
+   
+
     list-style: none;
     margin: 26px 0 20px;
-width: 350px;
+    width: 350px;
 text-shadow: 0.5px 0.5px rgb(184, 182, 182);
 
 }
@@ -206,12 +324,14 @@ text-shadow: 0.5px 0.5px rgb(184, 182, 182);
     .sbenefits-text{
 font-weight: 500;
 line-height: 32px; 
+
 animation: sliderTranslate ease-in-out 0.6s;
 }
 @keyframes sliderTranslate{
 from{
     opacity: 0;
-transform: translate3d(0 , 70px ,-12px);
+    
+transform: translate3d(70px , 0 ,-122px) ;
 
 }
 to{
@@ -224,12 +344,13 @@ transform:translate3d(0) ;
 color: var(--white-color);
 }
 .slider-button{
-    margin-top: 10px;
     position: relative;
-  animation: sliderRotate ease-in-out 0.6s ;
- 
-
+  
+   transform-origin: top ;
+  animation:  sliderRotate ease-in-out  0.7s ;
+  
 }
+
 @keyframes sliderRotate{
     from{     
         opacity: 0;
@@ -242,13 +363,13 @@ color: var(--white-color);
 }
 
 .slider-button__buy{
-    padding: 13px 52px;
+    padding: 16px 61px;
     font-size: var(--font-size-20);
 }
 .slider-noti{
     position: absolute;
-    top: -25px;
-    right: -13px;
+    top: -28px;
+    right: 49%;
     font-size: var(--font-size-15);
     color: var(--white-color);
     padding: 14px 11px;
@@ -258,7 +379,7 @@ color: var(--white-color);
 /* content */
 /* tour paris */
 .tour-paris__img{
-    width: 400px;
+    width: 100%;
     height: 658.5px;
     background: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-07.jpg?id=1845") center / cover no-repeat;
     position: relative;
@@ -269,7 +390,7 @@ line-height: var(--line-height-30);
 margin: 70px 0 0 70px;
 }
 .tour-paris{
-margin: 60px 0 0;
+padding-top: 75px
 }
 .tour-paris__text-intro{
 font-size: var(--font-size-15);
@@ -279,10 +400,13 @@ font-weight: 400;
 .tour-paris__text-title{
 font-size: var(--font-size-36);
 color: var(--color-font-ml);
- position: relative;
+ 
  letter-spacing: 1.2px;
 }
-.tour-paris__text-title .underlined{
+.tour-paris__text-title span{
+    position: relative;
+}
+.underlined{
      content: "";
     display: block;
     position: absolute;
@@ -291,13 +415,13 @@ color: var(--color-font-ml);
     background-color: var(--primary-color);
     z-index: -99;
     transform: rotate(-1deg);
-    top:75%;
-    transform: translateX(90%);
+    top: 69%;
+    right: 0;
     
 }
 
 .tour-paris__button{
-margin-top: 42px;
+    margin: 38px 0 25px;
 font-size: var(--font-size-15);
 font-weight: 400;
 padding: 8px 38px;
@@ -312,11 +436,12 @@ right: 39%;
     transform:translateY(-122%);
 }
 .tour-paris-img__sm{
-    width: 200px;
+    width: 100%;
     
 }
 .tour-link-tick{
     position: relative;
+    margin-top: 16px;
 }
 .tour-paris-cash{
     position: absolute;
@@ -403,6 +528,7 @@ color: var(--white-color);
 /* ticket sale */
 .tickets-sale{
     background-color: var(--primary-color);
+    margin-bottom: 4.2rem;
 }
 .tickets-wrap{
   line-height: 30px;
@@ -424,12 +550,14 @@ color: var(--white-color);
 z-index: 1;
 font-weight: 500;
 font-size: var(--font-size-36);
+margin: 20px 0 0;
+display: inline-block;
 
 }
 .tickets-sale__title-2::after{
     position: absolute;
     content: "";
-    top: 31px;
+    top: 23px;
     height: 6px;
     width: 96px;
     background-color: #da9360;
@@ -563,18 +691,19 @@ font-weight: 400;
 font-size: var(--font-size-36);
 color: var(--color-font-ml);
 }
-.tour-news__text-below span{
+.tour-news__text-below div{
    position: relative;
+   display: inline-block;
    z-index: 1;  
 }
-.tour-news__text-below span::after{
+.tour-news__text-below div::after{
     content: "";
     position: absolute;
     background-color: var(--color-mint);
     height: 5px;
     width: 100%;
    right: 0;
-   bottom: 7px;
+   bottom: 2px;
    z-index: -1;
     
 }
@@ -608,7 +737,7 @@ padding-bottom: 12px;
 .tnews-btn{
     font-size: var(--font-size-14);
     font-weight: 400;
-    padding: 4px 0 ;
+   
 }
 
 /* footer */
@@ -616,37 +745,37 @@ padding-bottom: 12px;
     padding-top: 49px;
 }
 .footer-img{
-   height: 510px;
+  min-height: 550px ;
     background: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-07.jpg?id=1845) center / cover no-repeat;
+    position: relative;
 }
 .footer-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+ top:50% ;
+  right: 50%;
+  transform: translate(50% , -50%);
 }
 .footer-contents{
-    width: 1200px;
-    height: 290px;
+   
     background-color: var(--white-color);
     display: flex;
     margin: auto auto 0;
  
 }
 .footer-contents-right{
-padding: 40px 0 0 45px;
+padding: 40px 0 4rem 45px;
 }
+
 .footer-contents-left{
    display: flex;
    align-items: center;
-  
+  padding-bottom: 4rem;
+  padding-top: 5rem;
 }
 .footer-contents__ul{
     display: flex;
     flex-flow: column;
-    align-items: center;
     height: 100%;
-    justify-content: center;
 }
 .footer-img-logo{
     width: 150px;
@@ -683,7 +812,7 @@ padding: 6px 0 ;
 padding-left: 6px;
 }
 .footer-below{
-    width: 1200px;
+   
     height: 53px;
     background-color: var(--primary-color);
     margin:0 auto;

@@ -1,0 +1,104 @@
+/* tablet and mobile */
+@media (max-width: 1023px) {
+  .hide-on__tablet-moible {
+    display: none;
+  }
+  /* logo head */
+  .hnavbar-img {
+    margin: 0 auto;
+  }
+
+  /* thanh navbar  tren tablet and mobile*/
+  .headpage-navbar__wrap2 {
+    display: flex;
+  }
+
+  /* button slider */
+  .slider-lists {
+    position: absolute;
+    transform: translateX(50%);
+    top: 73%;
+    right: 50%;
+  }
+  /* establish button slider */
+  .slider-button__buy {
+    padding: 22px 60px;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  /* tour paris */
+  .wide__width-full {
+    width: 100%;
+  }
+  .tour-paris {
+    padding: 2.5rem 1rem 0;
+  }
+  .tour-paris__content {
+    margin: 0;
+  }
+  /* 4 img duoi tour paris */
+  .tour-paris__img-link-list {
+    transform: translateY(0);
+  }
+  /* tour benefit */
+  .tour-benefits__background {
+    margin-top: 4rem;
+  }
+  .tbenefits-list {
+    padding: 0 2.2rem;
+  }
+  /* tour ticket */
+  .tour-tickets {
+    flex-direction: column;
+  }
+  .tickets-time-wrap {
+    justify-content: space-around;
+  }
+  .tickets-sale__title-2 {
+    margin-left: 12px;
+  }
+  /* tour ticket right */
+  .tickets-tour {
+    margin-bottom: 2rem;
+  }
+ 
+}
+/* tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on__tablet {
+    display: none;
+  }
+  
+}
+/* mobile */
+@media (max-width: 739px) {
+  .hide-on__mobile {
+    display: none;
+  }
+  /* establish button slider */
+  .slider-button__buy {
+    padding: 12px 17px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  /* tour new */
+  .tour-news__text-below {
+    padding: 0 3rem;
+  }
+  /* flex -column */
+  .tour-news:nth-of-type(2n + 1) {
+    flex-direction: column;
+  }
+  .tour-news:nth-of-type(2n + 2) {
+    flex-direction: column-reverse;
+  }
+  /* fix width img / content */
+  .tour-news__img,
+  .tour-news-contents {
+    width: 100%;
+  }
+  /* footer */
+  
+}
